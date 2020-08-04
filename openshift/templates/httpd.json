@@ -10,7 +10,7 @@
       "iconClass": "icon-apache",
       "openshift.io/long-description": "This template defines resources needed to develop a static application served by Apache HTTP Server (httpd), including a build configuration and application deployment configuration.",
       "openshift.io/provider-display-name": "Red Hat, Inc.",
-      "openshift.io/documentation-url": "https://github.com/mclarkson78/example-apache",
+      "openshift.io/documentation-url": "https://github.com/ambikakaul1/example-apache.git",
       "openshift.io/support-url": "https://access.redhat.com",
       "template.openshift.io/bindable": "false"
     }
@@ -34,8 +34,8 @@
         "ports": [
           {
             "name": "web",
-            "port": 9080,
-            "targetPort": 9080
+            "port": 8080,
+            "targetPort": 8080
           }
         ],
         "selector": {
@@ -242,7 +242,7 @@
       "displayName": "Git Repository URL",
       "description": "The URL of the repository with your application source code.",
       "required": true,
-      "value": "https://github.com/mclarkson78/example-apache.git"
+      "value": "https://github.com/ambikakaul1/example-apache.git"
     },
     {
       "name": "SOURCE_REPOSITORY_REF",
@@ -258,7 +258,7 @@
       "name": "APPLICATION_DOMAIN",
       "displayName": "Application Hostname",
       "description": "The exposed hostname that will route to the httpd service, if left blank a value will be defaulted.",
-      "value": ""
+      "value": "https://exam-apache-ambika-kaul.do288training-159361736-f72ef11f3ab089a8c677044eb28292cd-0000.us-east.containers.appdomain.cloud/"
     },
     {
       "name": "GITHUB_WEBHOOK_SECRET",
